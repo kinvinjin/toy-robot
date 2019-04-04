@@ -1,0 +1,24 @@
+{
+  "name": "toy-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinvinjin/toy-robot.git"
+  },
+  "author": "kinvinjin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinvinjin/toy-robot/issues"
+  },
+  "homepage": "https://github.com/kinvinjin/toy-robot#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
