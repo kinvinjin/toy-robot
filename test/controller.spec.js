@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const { eval } = require('../lib/controller');
+const { eval, build } = require('../lib/controller');
 const { errors } = require('../lib/constants');
 const table = require('../lib/table');
 
@@ -28,6 +28,12 @@ describe('controller.js', function() {
         
         it('should return true if the input command is a valid PLACE', function() {
             expect(eval('PLACE 0,0,NORTH')).to.be.true;
+        });
+    });
+    
+    describe('build(path)', function() {
+        it('should run the function successfully', function() {
+            expect(() => build).to.not.throw();
         });
     });
 });
