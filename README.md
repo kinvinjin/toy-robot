@@ -31,27 +31,23 @@ This is the entry to run and demonstrate the application. It reads the path from
 The application is developed in `Node.js (version v10.15.1)`. So, to execute the application, `Node.js` and `NPM` should be installed beforehand.
 
 To install required npm modules for the application, run
->
-npm install 
+> npm install 
 
 ## Execution
 To execute the app, run
->
-npm start
+> npm start
 
 or
->
-node app
+> node app
 
 ## Example
 The test file contains input commands as following: 
->
-PLACE 1,2,EAST
-MOVE
-MOVE
-LEFT
-MOVE
-REPORT
+> PLACE 1,2,EAST
+> MOVE
+> MOVE
+> LEFT
+> MOVE
+> REPORT
 
 Run the application:
 
@@ -62,10 +58,8 @@ Run the application:
 
 ## Test
 To execute test cases, run
->
-npm test
+> npm test
 
 To see coverage, run
->
-npm coverage
+> npm coverage
 
