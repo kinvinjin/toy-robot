@@ -14,6 +14,19 @@ To use a local file, specify the `path` in the ./config.json  before the applica
 Note: it will throw exception and terminate if it is specified to use a local file but the file path is incorrect.
 * Both uppercase and lowercase input commands are valid. For example, REPORT and report are both acceptable commands.
  
+## Design and Implementation
+The classes and modules below are used to implement the solution.
+* Robot
+This class contains all the methods to operate a robot. It calls methods of Table class to move.
+* Table
+This class can store the current position information of a robot on the table. It also provide methods to set and get the position information. If the new position will be out of the table, it refuses to update the position.
+* Input
+It is responsible for getting input commands from a local file or console.
+* Controller
+It calls Input to get data, and then it parses, validates and executes input commands (each line) by calling methods in Robot class. If it is REPORT command, it returns the position information to console. It also deals with any exceptions and discard any invalid commands.
+* App
+This is the entry to run and demonstrate the application. It reads the path from config file and use the API provided by Controller.
+
 ## Setup
 The application is developed in `Node.js (version v10.15.1)`. So, to execute the application, `Node.js` and `NPM` should be installed beforehand.
 
