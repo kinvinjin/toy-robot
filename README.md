@@ -43,6 +43,23 @@ or
 >
 node app
 
+## Example
+The test file contains input commands as following: 
+>
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+
+Run the application:
+
+> npm start
+
+> Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
+> current robot is at: 3, 3, NORTH
+
 ## Test
 To execute test cases, run
 >
