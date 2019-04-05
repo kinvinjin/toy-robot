@@ -55,4 +55,20 @@ describe('robot.js', function() {
             expect(pos).to.deep.equal(expected.move2);
         });
     });
+    
+    describe('left()', function() {
+        it('should turn left', function() {
+            expect(table.getPos().f).to.equal('NORTH');
+            let pos = robot.left.call(robot);
+            expect(table.getPos().f).to.equal('WEST');
+        });
+    });
+    
+    describe('right()', function() {
+        it('should should turn right', function() {
+            expect(table.getPos().f).to.equal('WEST');
+            let pos = robot.right.call(robot);
+            expect(table.getPos().f).to.equal('NORTH');
+        });
+    });
 });
