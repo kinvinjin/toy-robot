@@ -54,9 +54,11 @@ REPORT
 Run the application:
 > npm start
 
-> Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
+```
+Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
 
-> current robot is at: 3, 3, NORTH
+current robot is at: 3, 3, NORTH
+```
 
 ## Test
 To execute test cases, run
