@@ -16,15 +16,15 @@ Note: it will throw exception and terminate if it is specified to use a local fi
  
 ## Design and Implementation
 The classes and modules below are used to implement the solution.
-* Robot
+* **Robot**
 This class contains all the methods to operate a robot. It calls methods of Table class to move.
-* Table
+* **Table**
 This class can store the current position information of a robot on the table. It also provide methods to set and get the position information. If the new position will be out of the table, it refuses to update the position.
-* Input
+* **Input**
 It is responsible for getting input commands from a local file or console.
-* Controller
+* **Controller**
 It calls Input to get data, and then it parses, validates and executes input commands (each line) by calling methods in Robot class. If it is REPORT command, it returns the position information to console. It also deals with any exceptions and discard any invalid commands.
-* App
+* **App**
 This is the entry to run and demonstrate the application. It reads the path from config file and use the API provided by Controller.
 
 ## Setup
@@ -42,20 +42,16 @@ or
 
 ## Example
 The test file contains input commands as following: 
-> PLACE 1,2,EAST
-
-> MOVE
-
-> MOVE
-
-> LEFT
-
-> MOVE
-
-> REPORT
+```
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+```
 
 Run the application:
-
 > npm start
 
 > Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
