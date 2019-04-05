@@ -65,5 +65,5 @@ To execute test cases, run
 > npm test
 
 To see coverage, run
-> npm coverage
+> npm run coverage
 

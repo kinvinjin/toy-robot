@@ -17,6 +17,7 @@ const testdata_for_lowercase = {
     report: 'report'
 };
 const tokens = {token: 'PLACE', params: ['1', '1', 'NORTH']};
+const tokens_invalid_parames = {token: 'PLACE', params: ['1', 'NORTH']};
 const expected = {token: 'PLACE', params: [1, 1, 'NORTH']};
 const expected_move = {token: 'MOVE', params: []};
 const expected_left = {token: 'LEFT', params: []};
@@ -69,6 +70,10 @@ describe('utils.js', function() {
     describe('checkParams(params, requiredCount)', function() {
         it('should return true if the number of the params equals required count', function() {
             expect(utils.checkParams(tokens.params, commands.PLACE.params)).to.be.true;
+        });
+        
+        it('should return true if the number of the params is different from required count', function() {
+            expect(utils.checkParams(tokens_invalid_parames.params, commands.PLACE.params)).to.be.false;
         });
     });
     
