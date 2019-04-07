@@ -79,19 +79,19 @@ Set config.json to read from stdin:
 Run the application:
 > npm start
 
-> toy-robot@1.0.0 start E:\workspace\toy-robot
-
-> node app.js
-
-> Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
+```
+Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
+```
 
 Input commands:
-```
-PLACE 3,3,NORTH
-MOVE
-LEFT
-REPORT
-```
+
+> PLACE 3,3,NORTH
+
+> MOVE
+
+> LEFT
+
+> REPORT
 
 Output:
 ```
