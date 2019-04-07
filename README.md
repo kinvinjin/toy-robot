@@ -41,6 +41,14 @@ or
 > node app
 
 ## Example
+** Read from file***
+
+Set config.json to read from a local file:
+```
+{
+  "path": "./commands.txt"
+}
+```
 The test file contains input commands as following: 
 ```
 PLACE 1,2,EAST
@@ -54,11 +62,42 @@ REPORT
 Run the application:
 > npm start
 
+Output:
 ```
-Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
-
 current robot is at: 3, 3, NORTH
 ```
+
+** Read from stand input (console) **
+
+Set config.json to read from stdin:
+```
+{
+  "path": ""
+}
+```
+
+Run the application:
+> npm start
+
+> toy-robot@1.0.0 start E:\workspace\toy-robot
+> node app.js
+
+> Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
+
+Input commands:
+```
+PLACE 3,3,NORTH
+MOVE
+LEFT
+REPORT
+```
+
+Output:
+```
+current robot is at: 3, 4, WEST
+```
+
+Use Ctrl+C to terminate.
 
 ## Test
 To execute test cases, run
