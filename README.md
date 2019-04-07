@@ -34,7 +34,7 @@ To install required npm modules for the application, run
 > npm install 
 
 ## Execution
-To execute the app, run
+To execute the app, in the project directory `toy-robot`, run
 > npm start
 
 or
@@ -67,7 +67,7 @@ Output:
 current robot is at: 3, 3, NORTH
 ```
 
-### Read from stand input (console)
+### Read from standard input (console)
 
 Set config.json to read from stdin:
 ```
@@ -101,7 +101,7 @@ current robot is at: 3, 4, WEST
 Use Ctrl+C to terminate.
 
 ## Test
-To execute test cases, run
+To execute test cases, in the project directory `toy-robot`, run
 > npm test
 
 To see coverage, run
