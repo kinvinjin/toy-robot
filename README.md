@@ -41,7 +41,7 @@ or
 > node app
 
 ## Example
-** Read from file***
+### Read from file
 
 Set config.json to read from a local file:
 ```
@@ -67,7 +67,7 @@ Output:
 current robot is at: 3, 3, NORTH
 ```
 
-** Read from stand input (console) **
+### Read from stand input (console)
 
 Set config.json to read from stdin:
 ```
@@ -80,6 +80,7 @@ Run the application:
 > npm start
 
 > toy-robot@1.0.0 start E:\workspace\toy-robot
+
 > node app.js
 
 > Please input commands to operate Robot. Valid commands include PLACE, MOVE, LEFT, RIGHT and REPORT.
